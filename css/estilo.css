@@ -1,0 +1,286 @@
+body {
+    background: linear-gradient(270deg, rgb(0, 0, 0) 0%, rgba(54, 9, 9,1) 50%, rgb(119, 30, 30) 100%);
+    margin: 0;
+}
+
+header {
+    background-color: rgb(54, 9, 9);
+    height:35vh;
+    margin-top: 0;
+}
+
+h1, h2 {
+    font-family: 'Zilla Slab', serif;
+    color: rgb(197, 146, 137);
+    text-align: center;
+  
+}
+
+h1{
+    font-size: 2em;
+}
+
+h2{
+    font-size: 1.5em;
+}
+
+ .botonera {
+    width: 600px;
+    height: 100px;
+    margin: auto;
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    
+    
+}
+
+.boton_menu {
+    width: 200px;
+    height: 75px;
+    background-color: rgb(78, 18, 18);
+    border: rgb(248, 213, 213) 1px solid;
+    padding: auto;
+    margin: auto;
+    align-self: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 235, 205);
+    
+}
+
+.boton_menu:hover {
+    animation-name: cambioColor;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes cambioColor {
+    from {background-color: rgb(78, 18, 18);}
+    to {background-color: rgb(135, 62, 62);}
+}
+
+#banner1, #banner2 {
+    width: 500px;
+    height: auto;
+}
+#banner3 {
+    width: 500px;
+    height: 150px;
+}
+
+main #fondo_fantasma {
+    position: absolute;
+     width: 100%;
+     height: auto;
+     z-index: -1;
+ }
+
+ .descripcion{
+    position: absolute;
+    font-family: 'Zilla Slab', serif;
+    font-size: 1.75em;
+    margin-top: 15vh;
+    margin-left: 5vw;
+    margin-right: 7vw;
+    padding: 25px;
+    text-align: left;
+    color: rgb(243, 243, 243);
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(120, 1, 1), 0 0 5px rgb(84, 4, 4);
+}
+.container {
+    position: relative;
+    padding: 1rem;
+    height: auto;
+    display: grid;
+    grid-template-rows: 100vh 50vh;
+    
+}
+.descripcion-container {
+    grid-area: f;
+    box-sizing: border-box;
+}
+
+.banners {
+    grid-area: t;
+    display: grid;
+    grid-template-rows: repeat (3, 33vh);
+    grid-template-areas: "a a a" "b b b" "c c c";
+    
+}
+
+.b1{
+    grid-area: a;
+    
+}
+.b2{
+    grid-area: b;
+}
+
+.b3{
+    grid-area: c;
+
+}
+
+.link_banner:hover {
+    border:rgb(243, 243, 243) 2px solid;
+
+}
+
+
+form {
+    color: rgb(197, 146, 137);
+    font-size: 1.25em;
+    }
+
+.formulario {
+    background-color: rgb(78, 18, 18);
+    border: rgb(248, 213, 213) 1px solid;
+    width: 40vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 0 350px;
+    padding: 1em;
+}
+
+@media all and (min-width:600px) and (max-width:1023px){
+    
+    main{
+        height: 100vh;
+    }
+    h1{
+        margin-top: 15vh;
+    }
+    
+    .botonera {
+        width: 450px;
+        height: 75px;
+        display: block;
+        margin: auto;
+        padding-top: 1.5vh;
+        padding-bottom: 1.5vh;
+        
+    }
+    
+    .boton_menu {
+        width: 150px;
+        height: 50px;
+     }
+       
+    .link_menu{
+       margin: 1.5vh;
+    } 
+
+    #banner1, #banner2 {
+        width: 400px;
+        height: auto;
+    }
+
+    #banner3 {
+        width: 400px;
+        height: 150px;
+    }
+    
+        
+     .descripcion{
+        font-size: 1.5em;
+        margin-top: 10vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        padding: 2px;
+        
+    }
+    
+    .container {
+       
+        grid-template-rows: 85vh 40vh;
+    }
+    
+    form {
+        font-size: 1em;
+        }
+    
+    .formulario {
+        background-color: rgb(78, 18, 18);
+        border: rgb(248, 213, 213) 1px solid;
+        display: block;
+        margin: 0 275px;
+        text-align: center;
+    }
+}/*fin de media de una tableta*/
+
+@media all and (max-width: 599px) {
+    
+h1{
+    font-size: 1.5em;
+    margin-top: 5vh;
+}
+
+.link_menu{
+ margin: 1.5vh;
+ }
+
+.botonera {
+   width: 200px;
+   height: 45px;
+   display: block;
+   margin: auto;
+   padding-top: 1.5vh;
+   padding-bottom: 1.5vh;
+        
+}
+
+.boton_menu {
+    width: 175px;
+    height: 50px;
+    background-color: rgb(78, 18, 18);
+    border: rgb(248, 213, 213) 1px solid;
+    padding: auto;
+    margin: auto;
+    align-self: center;
+}
+
+#banner1, #banner2 {
+    width: 300px;
+    height: auto;
+}
+
+#banner3 {
+    width: 300px;
+    height: 100px;
+}
+
+
+ .descripcion{
+    font-size: 1em;
+    margin-top: 7vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding: 1px;
+   
+}
+.container {
+    position: relative;
+    padding: 1rem;
+    grid-template-rows: 75vh 30vh;
+    
+}
+
+
+
+form {
+   font-size: 1em;
+    }
+
+.formulario {
+   text-align: center;
+    margin: 0 10vw;
+    width: 70vw;
+    display: block;
+    padding: 1em;
+}
+}/*fin media movil*/
